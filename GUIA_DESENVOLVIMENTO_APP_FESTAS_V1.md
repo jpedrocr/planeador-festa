@@ -111,13 +111,16 @@ Planeador de Festas Gastronómicas Colaborativo (Nome provisório, a definir)
 * **Frontend:** HTML5, Tailwind CSS, JavaScript. Avaliar a necessidade de um framework JS leve (como Svelte ou Vue.js na sua versão mais simples) se a gestão de estado e componentes se tornar muito complexa com Vanilla JS para múltiplas páginas interligadas.
 * **Backend (BaaS):** **Firebase** (Authentication, Firestore, Firebase Storage).
 * **Inteligência Artificial:** Interação com APIs de modelos de linguagem (como Gemini ou Claude) para as funcionalidades de sugestão e geração de conteúdo, a serem implementadas em fases posteriores.
-* **Outras:** Ferramentas de build e deployment (ex: Vite para o frontend, se aplicável; Firebase Hosting para o frontend).
+* **Outras:**
+    * **Ambiente de Desenvolvimento Principal:** Firebase Studio (anteriormente Project IDX), um ambiente de desenvolvimento web com IA integrada, para o desenvolvimento frontend e gestão do backend Firebase.
+    * Firebase Hosting para o alojamento do frontend.
 
 **7. Considerações de Desenvolvimento e Manutenção com IA:**
 
 * O código (frontend e backend, especialmente as Cloud Functions do Firebase, se usadas) deve ser bem estruturado, modular e comentado (internamente) para facilitar a análise e assistência por modelos de IA.
 * A estrutura da base de dados no Firestore deve ser desenhada de forma lógica e bem documentada, para que a IA possa mais facilmente compreender as relações entre os dados e ajudar a construir queries ou a sugerir otimizações.
 * Utilizar APIs bem definidas entre o frontend e o backend (mesmo que o backend seja Firebase, a forma como os dados são estruturados e acedidos conta).
+* A utilização do Firebase Studio como ambiente de desenvolvimento principal visa potenciar estas considerações, tirando partido da assistência IA (Gemini) integrada para a escrita, otimização e compreensão do código.
 
 **8. Plano de Implementação Faseado (MVP e Iterações Futuras):**
 
@@ -147,5 +150,3 @@ Planeador de Festas Gastronómicas Colaborativo (Nome provisório, a definir)
 * **MVP:** Utilizadores conseguem registar-se, criar um evento, selecionar pratos e organizar minimamente quem trata do quê. A funcionalidade de exportar/importar permite guardar e restaurar o trabalho.
 * **Médio Prazo:** Aumento do número de utilizadores, feedback positivo sobre a utilidade da plataforma, crescimento da base de dados de receitas e pratos, utilização das funcionalidades colaborativas.
 * **Longo Prazo:** Tornar-se uma referência para planeamento de eventos gastronómicos, com uma comunidade ativa e, potencialmente, um modelo de negócio sustentável.
-
----
